@@ -21,9 +21,9 @@ export default function Home({ data }) {
         <SearchInput />
         <div>
           {
-            data.map((chat, index) => {
+            data?.map((comment, index) => {
               return (
-                <Comment key={chat.id} chat={chat} index={index} />
+                <Comment key={comment.id} comment={comment} index={index} />
               )
             })
           }
